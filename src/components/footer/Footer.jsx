@@ -3,7 +3,7 @@ import './footer.css'
 
 function Footer() {
     return (
-        <div className="footer">
+        <div className="footer" id='contact'>
             <ul className='footer-ul'>
                 <li><a className='footer-link' href="">Instagram</a></li>
                 <li><a className='footer-link' href="">Facebook</a></li>
