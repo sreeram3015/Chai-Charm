@@ -1,0 +1,117 @@
+.menu {
+    position: relative;
+    top: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.menu-special {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(50% - 20px);
+    margin-bottom: 40px;
+    background: #16161d;
+    border: 2px solid #555555;
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+}
+
+.menu-special-items {
+    color: #fff;
+}
+
+.card:hover .menu-special-items {
+    transform: translate(50px);
+}
+
+.menu-special-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px;
+    transition: 1.5s;
+}
+
+.menu-special-roll-items,
+.menu-special-plate-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.menu-special h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin: 15px;
+    background-color: var(--color-white);
+    color: #16161d;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.menu-item-details {
+    margin: 9px;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 2000px) {
+    .menu-special h2 {
+        font-size: 1.5rem;
+        width: 30vw;
+    }
+
+
+    .bn01 {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    .menu-item-details {
+        font-size: 1rem;
+    }
+
+    .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .card {
+        width: 100%;
+    }
+
+    .menu-special h2 {
+        font-size: 1.2rem;
+    }
+
+    .menu-item-details {
+        font-size: 0.9rem;
+    }
+}
